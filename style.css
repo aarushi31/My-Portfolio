@@ -1,0 +1,112 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+main{
+    font-family:'Heebo',sans-serif;
+}
+.landing{
+    min-height:100vh;
+    background: url("./4427476.jpg");
+    background-size: cover;
+    padding:0rem 5rem;
+}
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 10vh;
+}
+.nav-links{
+    display: flex;
+    list-style: none;
+}
+.nav-links li{
+    padding-left:10rem;
+    font-size:1.2rem;
+}
+.nav-links li a{
+    text-decoration: none;
+    color:black;
+    font-family:'Heebo',sans-serif ;
+}
+#logo{
+    font-family: "Lobster",cursive;
+    font-weight: lighter;
+    font-size:2rem;
+}
+.big-text{
+    position:absolute;
+    top:30%;
+    left:50%;
+    transform: translate(-50%,-30%);
+    font-size:5rem;
+    font-family: "Lobster",cursive;
+    color:rgb(68, 42, 42);
+}
+.intro{
+    background:rgb(55, 177, 226);
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider{
+    background:rgb(129, 153, 163);
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    transform:translateY(100%);
+}
+
+
+.intro-text{
+    color:white;
+    font-family:"Heebo",sans-serif;
+    font-size:2rem;
+}
+.hide{
+    background:rgb(55, 177, 226);
+    overflow: hidden;
+}
+.hide span{
+    transform:translateY(100%);
+    display:inline-block;
+}
+/*Mobile Version*/
+@media only screen and (max-width: 600px) {
+    nav{
+      min-height:5vh;
+    }
+    .nav-links li{
+        padding-left:3rem;
+        font-size:0.9rem;
+    }
+    .nav-links li a{
+        text-decoration: none;
+        color:black;
+        font-family:'Heebo',sans-serif ;
+    }
+    .landing{
+        padding:0 2rem ;
+    }
+    #logo{
+        font-size:1.2rem;
+    }
+    .big-text{
+        font-size: 2rem;
+        position:fixed;
+        top:20%;
+    }
+    .intro-text{
+        font-size:1.2rem;
+        padding-left: 3%;
+    }
+  }

@@ -1,0 +1,104 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    background:rgb(55, 177, 226);
+    color:white;
+}
+main{
+    font-family:'Heebo',sans-serif;
+}
+.landing{
+
+    padding:0rem 5rem;
+}
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 10vh;
+}
+.nav-links{
+    display: flex;
+    list-style: none;
+}
+.nav-links li{
+    padding-left:10rem;
+    font-size:1.2rem;
+}
+.nav-links li a{
+    text-decoration: none;
+    color:white;
+    font-family:'Heebo',sans-serif ;
+}
+#logo{
+    font-family: "Lobster",cursive;
+    font-weight: lighter;
+    font-size:2rem;
+}
+.big-text h1{
+    text-align:center;
+    font-size: 4rem;
+    font-weight: bolder;
+}
+.circle{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:2rem;
+}
+.circle img{
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+    
+}
+.text{
+    padding-left:2rem;
+    padding-right:2rem;
+    padding-bottom:2rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: medium;
+}
+.outro{
+    font-weight: bold;
+}
+@media only screen and (max-width: 600px) {
+    nav{
+      min-height:5vh;
+    }
+    .nav-links li{
+        padding-left:3rem;
+        font-size:0.9rem;
+    }
+    .nav-links li a{
+        text-decoration: none;
+        color:white;
+        font-family:'Heebo',sans-serif ;
+    }
+    .landing{
+        padding:0 2rem ;
+    }
+    #logo{
+        font-size:1.2rem;
+    }
+    .big-text h1{
+        font-size: 3rem;
+        position:absolute;
+        top:40%;
+        left:30%;
+        text-align: center;
+    }
+    .intro-text{
+        font-size:1.2rem;
+        padding-left: 3%;
+    }
+    .text{
+        position:absolute;
+        top:55%;
+        font-size: 1.2rem;
+    }
+  }
